@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-management-system",
+  "version": "1.0.0",
+  "description": "A full-stack portfolio management system for tracking stocks, bonds, and cash flow",
+  "main": "index.js",
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "install-frontend": "cd frontend && npm install",
+    "install-all": "npm run install-backend && npm run install-frontend",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm start",
+    "build-frontend": "cd frontend && npm run build",
+    "start-backend": "cd backend && npm start",
+    "test-backend": "cd backend && npm test",
+    "test-frontend": "cd frontend && npm test"
+  },
+  "keywords": [
+    "portfolio",
+    "stocks",
+    "bonds",
+    "finance",
+    "investment",
+    "cash-flow",
+    "react",
+    "nodejs",
+    "mysql"
+  ],
+  "author": "",
+  "license": "ISC"
+}
