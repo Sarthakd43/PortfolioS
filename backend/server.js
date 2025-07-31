@@ -61,8 +61,6 @@ app.use((req, res, next) => {
 // Routes (no authentication middleware)
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/stocks', require('./routes/stocks'));
-app.use('/api/bonds', require('./routes/bonds'));
-app.use('/api/cashflow', require('./routes/cashflow'));
 app.use('/api/portfolio', require('./routes/portfolio'));
 
 // Health check endpoint
