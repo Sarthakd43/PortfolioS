@@ -1,6 +1,6 @@
-# Portfolio Management System
+# Stocks Portfolio Management System
 
-A single-user portfolio management web application for tracking personal investments including stocks, bonds, and cash flow.
+A single-user web application for tracking personal stock investments.
 
 ## Tech Stack
 
@@ -24,23 +24,10 @@ A single-user portfolio management web application for tracking personal investm
 - Real-time gain/loss calculations
 - Sector-based organization
 
-### 🏦 Bond Management
-- Manage government, corporate, and municipal bonds
-- Track maturity dates and coupon rates
-- Monitor upcoming maturities
-- Calculate annual income from bonds
-
-### 💰 Cash Flow Tracking
-- Record income and expenses
-- Categorize transactions
-- Recurring transaction support
-- Monthly, quarterly, and yearly summaries
-
 ### 📊 Portfolio Analytics
-- Comprehensive dashboard with key metrics
-- Asset allocation visualization
+- Dashboard with key metrics
+- Asset allocation visualization (stocks only)
 - Performance tracking over time
-- Automated alerts and notifications
 
 ## Getting Started
 
@@ -144,27 +131,8 @@ The frontend will be available at `http://localhost:3000`
 - `DELETE /api/stocks/:id` - Delete stock
 - `GET /api/stocks/summary` - Get stocks summary
 
-### Bonds
-- `GET /api/bonds` - Get all bonds
-- `POST /api/bonds` - Add new bond
-- `PUT /api/bonds/:id` - Update bond
-- `DELETE /api/bonds/:id` - Delete bond
-- `GET /api/bonds/summary` - Get bonds summary
-- `GET /api/bonds/upcoming-maturities` - Get upcoming bond maturities
-
-### Cash Flow
-- `GET /api/cashflow` - Get cash flow entries
-- `POST /api/cashflow` - Add new cash flow entry
-- `PUT /api/cashflow/:id` - Update cash flow entry
-- `DELETE /api/cashflow/:id` - Delete cash flow entry
-- `GET /api/cashflow/summary` - Get cash flow summary
-- `GET /api/cashflow/categories` - Get categories with totals
-
 ### Portfolio
 - `GET /api/portfolio/overview` - Get portfolio overview
-- `GET /api/portfolio/performance` - Get performance metrics
-- `GET /api/portfolio/allocation` - Get asset allocation
-- `GET /api/portfolio/alerts` - Get portfolio alerts
 
 ## Project Structure
 
@@ -173,17 +141,17 @@ portfolio/
 ├── backend/                 # Express.js API server
 │   ├── routes/             # API route handlers
 │   ├── middleware/         # Custom middleware (unused in single-user mode)
-│   ├── server.js          # Main server file
-│   └── package.json       # Backend dependencies
+│   ├── server.js           # Main server file
+│   └── package.json        # Backend dependencies
 ├── frontend/               # React.js application
 │   ├── src/
-│   │   ├── components/    # React components
-│   │   ├── contexts/      # React contexts
-│   │   └── App.js        # Main app component
-│   └── package.json      # Frontend dependencies
-├── database/              # Database schema and migrations
-│   └── schema.sql        # MySQL database schema
-└── README.md             # Project documentation
+│   │   ├── components/     # React components
+│   │   ├── contexts/       # React contexts
+│   │   └── App.js          # Main app component
+│   └── package.json        # Frontend dependencies
+├── database/               # Database schema and migrations
+│   └── schema.sql          # MySQL database schema
+└── README.md               # Project documentation
 ```
 
 ## Single-User Design
@@ -191,7 +159,6 @@ portfolio/
 This application is designed for personal use by a single user:
 - No user registration or login required
 - All data belongs to one default user (ID: 1)
-- Simplified authentication model
 - Direct access to all portfolio features
 
 ## Development
